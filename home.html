@@ -9,12 +9,13 @@
     <script src="" type="text/javascript"></script>
 </head>
 <body>
+<div class="container">
     <!--头部-->
-    <div class="container logo">
+    <div class=" logo">
         <img src="imgs/views/header.png">
     </div>
     <!--导航栏-->
-    <div class="container navigation">
+    <div class=" navigation">
         <div class="row">
             <div class="col nav">
                 <ul>
@@ -30,23 +31,25 @@
         </div>
     </div>
     <!--内容-->
-    <div class="container main">
-        <div class="main-nav">
-            表示固定在左侧	string, boolean	true, left, right	—
-            render-header	列标题 Label 区域渲染使用的 Function	Function(h, { column, $index })	—	—
-            sortable	对应列是否可以排序，如果设置为 'custom'，则代表用户希望远程排序，需要监听 Table 的 sort-change 事件	boolean, string	true, false, 'custom'	false
-            sort-method	对数据进行排序的时候使用的方法，仅当 sortable 设置为 true 的时候有效，需返回一个布尔值
-        </div>
-        <div class="main-content">
-            表示固定在左侧	string, boolean	true, left, right	—
-            render-header	列标题 Label 区域渲染使用的 Function	Function(h, { column, $index })	—	—
-            sortable	对应列是否可以排序，如果设置为 'custom'，则代表用户希望远程排序，需要监听 Table 的 sort-change 事件	boolean, string	true, false, 'custom'	false
-            sort-method	对数据进行排序的时候使用的方法，仅当 sortable 设置为 true 的时候有效，需返回一个布尔值
+    <div class=" main">
+        <div class="contentBox">
+            <div class="content-nav">
+                表示固定在左侧	string, boolean	true, left, right	—
+                lse, 'custom'	false
+                sort-method	对数据进行排序的时候使用的方法，仅当 sortable 设置为 true 的时候有效，需返回一个布尔值
+            </div>
+            <div class="content-text">
+                表示固定在左侧	string, boolean	true, left, right	—
+                render-header	列标题 Label 区域渲染使用的 Function	Function(h, { column, $index })	—	—
+                sortable	对应列是否可以排序，如果设置为 'custom'，则代表用户希望远程排序，需要监听 Table 的 sort-change 事件	boolean, string	true, false, 'custom'	false
+                sort-method	对数据进行排序的时候使用的方法，仅当 sortable 设置为 true 的时候有效，需返回一个布尔值
+            </div>
         </div>
     </div>
     <!--底部-->
     <div id="footer">
         Copyright © 2014-2018 桥梁建造实验室
     </div>
+</div>
 </body>
 </html>

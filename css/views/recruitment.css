@@ -1,15 +1,13 @@
 
-.main .main-nav{
-    line-height: 30px;
-}
-.main .main-content{
-    line-height: 30px;
-}
-.main .title{
+.contentBox .title{
     font-size: 20px;
     font-family: sans-serif,Verdana,Arial;
     background-color: #F8F7F6;
+    border-left:10px solid #13CE66;
+    padding-left: 10px;
+    padding-top: -10px;
+    color: black;
 }
-.main .title:before{
-    border: 6px solid #505050;
+.contentBox p span{
+    font-weight: bold;
 }

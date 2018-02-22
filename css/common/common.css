@@ -1,3 +1,9 @@
+.container{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
 /*头部*/
 .logo{
     height: 100px;
@@ -40,30 +46,40 @@
 
 /*内容*/
 .main{
-    height: 60%;
-    padding: 1% 20% 1% 15%;
+    flex-grow: 1;
+}
+.contentBox{
     display: flex;
+    display: -webkit-flex;
+    fiex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1% 20% 1% 15%;
     background-color: #F7F6F5;
 }
-.main-nav{
-    flex: 1;
-    padding: 020px;
+.content-nav{
+    width: 25%;
     margin-right: 20px;
     background-color: #ffffff;
     border: 1px solid #EBEAE8;
     border-radius: 5px;
+    line-height: 30px;
+    padding: 10px;
 }
-.main-content{
-    flex: 00180px;
-    padding: 020px;
+.content-text{
+    width: 75%;
     background-color: #ffffff;
     border: 1px solid #EBEAE8;
     border-radius: 5px;
+    line-height: 30px;
+    padding: 10px;
 }
 
 /*底部*/
 #footer{
-    height: 10%;
+    /*flex-grow: 1;*/
+    height: 20px;
+    line-height: 20px;
     border-top: 1px solid #E6E5E2;
     background-color: #F7F6F5;
     padding: 10px;
