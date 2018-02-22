@@ -1,0 +1,15 @@
+
+.main .main-nav{
+    line-height: 30px;
+}
+.main .main-content{
+    line-height: 30px;
+}
+.main .title{
+    font-size: 20px;
+    font-family: sans-serif,Verdana,Arial;
+    background-color: #F8F7F6;
+}
+.main .title:before{
+    border: 6px solid #505050;
+}
