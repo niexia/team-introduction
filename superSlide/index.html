@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>腾讯新闻多图jQuery相册代码 - 16素材网</title>
+<link rel="stylesheet" href="css/quanju.css" type="text/css" media="all">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="play">
+  <ul class="img_ul">
+    <li style="display:block;"><a class="img_a"><img src="images/th1.jpg"></a></li>
+    <li><a class="img_a"><img src="images/th2.jpg"></a></li>
+    <li><a class="img_a"><img src="images/th3.jpg"></a></li>
+    <li><a class="img_a"><img src="images/th4.jpg"></a></li>
+    <li><a class="img_a"><img src="images/th5.jpg"></a></li>
+    <li><a class="img_a"><img src="images/th6.jpg"></a></li>
+    <li><a class="img_a"><img src="images/th7.jpg"></a></li>
+    <li><a class="img_a"><img src="images/th8.jpg"></a></li>
+    <li><a class="img_a"><img src="images/th9.jpg"></a></li>
+    <li><a class="img_a"><img src="images/th10.jpg"></a></li>
+  </ul>  
+  <a href="javascript:void(0)" class="prev_a change_a" title="上一张"> <span></span></a>
+  <a href="javascript:void(0)" class="next_a change_a" title="下一张"> <span style="display: inline; "></span> </a>
+  </div>
+  
+<div class="img_hd">
+  <ul class=" clearfix">
+    <li><a class="img_a"><img src="images/th1.jpg" onload="imgs_load(this)"></a></li>
+    <li><a class="img_a"><img src="images/th2.jpg" onload="imgs_load(this)"></a></li>
+    <li><a class="img_a"><img src="images/th3.jpg" onload="imgs_load(this)"></a></li>
+    <li><a class="img_a"><img src="images/th4.jpg" onload="imgs_load(this)"></a></li>
+    <li><a class="img_a"><img src="images/th5.jpg" onload="imgs_load(this)"></a></li>
+    <li><a class="img_a"><img src="images/th6.jpg" onload="imgs_load(this)"></a></li>
+    <li><a class="img_a"><img src="images/th7.jpg" onload="imgs_load(this)"></a></li>
+    <li><a class="img_a"><img src="images/th8.jpg" onload="imgs_load(this)"></a></li>
+    <li><a class="img_a"><img src="images/th9.jpg" onload="imgs_load(this)"></a></li>
+    <li><a class="img_a"><img src="images/th10.jpg" onload="imgs_load(this)"></a></li>
+  </ul>
+  <a class="bottom_a prev_a" style="opacity: 0.7; "></a> <a class="bottom_a next_a" style="opacity: 0.7; "></a> </div>
+<script>
+	var i=0; //图片标识
+var img_num=$(".img_ul").children("li").length; //图片个数
+$(".img_ul li").hide(); //初始化图片	
+play();
+$(function(){
+	 $(".img_hd ul").css("width",($(".img_hd ul li").outerWidth(true))*img_num); //设置ul的长度
+	 
+	 $(".bottom_a").css("opacity",0.7);	//初始化底部a透明度
+	 //$("#play").css("height",$("#play .img_ul").height());
+	 if (!window.XMLHttpRequest) {//对ie6设置a的位置
+	 $(".change_a").css("height",$(".change_a").parent().height());}
+	 $(".change_a").focus( function() { this.blur(); } );
+	 $(".bottom_a").hover(function(){//底部a经过事件
+		 $(this).css("opacity",1);	
+		 },function(){
+		$(this).css("opacity",0.7);	 
+			 });
+	 $(".change_a").hover(function(){//箭头显示事件
+		 $(this).children("span").show();
+		 },function(){
+		 $(this).children("span").hide();
+			 });
+	 $(".img_hd ul li").click(function(){
+		 i=$(this).index();
+		 play();
+		 });
+	 $(".prev_a").click(function(){
+		 //i+=img_num;
+		 i--;
+		 //i=i%img_num;
+		 i=(i<0?0:i);
+		 play();
+		 }); 
+	 $(".next_a").click(function(){
+		 i++;
+		 //i=i%img_num;
+		 i=(i>(img_num-1)?(img_num-1):i);
+		 play();
+		 }); 
+	 }); 
+function play(){//动画移动	
+	var img=new Image(); //图片预加载
+	img.onload=function(){img_load(img,$(".img_ul").children("li").eq(i).find("img"))};
+	img.src=$(".img_ul").children("li").eq(i).find("img").attr("src");
+	//$(".img_ul").children("li").eq(i).find("imgs").(img_load($(".img_ul").children("li").eq(i).find("imgs")));
+	
+	$(".img_hd ul").children("li").eq(i).addClass("on").siblings().removeClass("on");
+	if(img_num>7){//大于7个的时候进行移动
+		if(i<img_num-3){ //前3个
+		$(".img_hd ul").animate({"marginLeft":(-($(".img_hd ul li").outerWidth()+4)*(i-3<0?0:(i-3)))});
+		}
+		else if(i>=img_num-3){//后3个
+			$(".img_hd ul").animate({"marginLeft":(-($(".img_hd ul li").outerWidth()+4)*(img_num-7))});
+			}
+	}
+	if (!window.XMLHttpRequest) {//对ie6设置a的位置
+	$(".change_a").css("height",$(".change_a").parent().height());}
+	}
+function img_load(img_id,now_imgid){//大图片加载设置 （img_id 新建的img,now_imgid当前图片）
+    
+    if(img_id.width/img_id.height>1)
+	{
+		if(img_id.width >=$("#play").width()) $(now_imgid).width($("#play").width());
+		}
+	else {
+		if(img_id.height>=500) $(now_imgid).height(500);
+		}
+		$(".img_ul").children("li").eq(i).show().siblings("li").hide(); //大小确定后进行显示
+	}
+function imgs_load(img_id){//小图片加载设置
+	if(img_id.width >=$(".img_hd ul li").width()){img_id.width = 80};
+	//if(img_id.height>=$(".img_hd ul li").height()) {img_id.height=$(".img_hd ul li").height();}
+	}
+	</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗.</p>
+<p>来源：<a href="http://www.16sucai.com/" target="_blank">16素材网</a></p>
+</div>
+</body>
+</html>
