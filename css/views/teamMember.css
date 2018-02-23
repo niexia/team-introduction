@@ -1,0 +1,36 @@
+.content-nav ul{
+    text-align: center;
+    line-height: 40px;
+}
+.content-text {
+    height: 1000px;
+}
+
+/*iframe*/
+.memberBox{
+    margin: 10px 20px;
+    line-height: 20px;
+    border-bottom: 1px dashed #DEDDDD;
+}
+
+.memberBox h5{
+    font-weight: bold;
+    color: #204C82;
+    font-size: 20px;
+    font-family:"Microsoft Yahei","Hiragino Sans GB","Heiti SC",sans-serif;;
+}
+
+.memberBox .img{
+    text-align: center;
+    margin: 20px;
+}
+.memberBox .img img{
+    height: 255px;
+}
+
+.memberBox .text{
+    font-size: 12px;
+    color: #7A7A7A;
+    line-height: 25px;
+    font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif;
+}

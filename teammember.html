@@ -5,6 +5,7 @@
     <title>Team</title>
     <link rel="stylesheet" href="css/common/reset.css" type="text/css" >
     <link rel="stylesheet" href="css/common/common.css" type="text/css" >
+    <link rel="stylesheet" href="css/views/teamMember.css" type="text/css">
     <script src="" type="text/javascript"></script>
     <script src="" type="text/javascript"></script>
 </head>
@@ -34,15 +35,17 @@
     <div class=" main">
         <div class="contentBox">
             <div class="content-nav">
-                表示固定在左侧	string, boolean	true, left, right	—
-                lse, 'custom'	false
-                sort-method	对数据进行排序的时候使用的方法，仅当 sortable 设置为 true 的时候有效，需返回一个布尔值
+                <ul>
+                    <li><a href="views/teamMember/groupTeacher.html" target="teamMember">组内老师</a></li>
+                    <li><a href="views/teamMember/postdoctoral.html" target="teamMember">博士后</a></li>
+                    <li><a href="views/teamMember/postgraduate.html" target="teamMember">研究生</a></li>
+                    <li><a href="views/teamMember/undergraduateStudents.html" target="teamMember">在读本科生</a></li>
+                    <li><a href="views/teamMember/graduatedMembers.html" target="teamMember">已毕业成员</a></li>
+                    <li><a href="views/teamMember/graduatedUndergraduates.html" target="teamMember">已毕业本科生</a></li>
+                </ul>
             </div>
             <div class="content-text">
-                表示固定在左侧	string, boolean	true, left, right	—
-                render-header	列标题 Label 区域渲染使用的 Function	Function(h, { column, $index })	—	—
-                sortable	对应列是否可以排序，如果设置为 'custom'，则代表用户希望远程排序，需要监听 Table 的 sort-change 事件	boolean, string	true, false, 'custom'	false
-                sort-method	对数据进行排序的时候使用的方法，仅当 sortable 设置为 true 的时候有效，需返回一个布尔值
+                <iframe name="teamMember" width="100%" height="100%" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
         </div>
     </div>
