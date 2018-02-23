@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../css/common/reset.css" type="text/css">
+    <link rel="stylesheet" href="../../css/views/equipment.css" type="text/css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../../css/plugins/viewer.css" type="text/css">
+
+
+</head>
+<body>
+<div>
+    <div class="memberBox">
+        <div class="title">生产设备</div>
+            <div class="container">
+                <h1>Viewer with custom toolbar</h1>
+                <div id="galley">
+                    <ul class="pictures">
+                        <li><img data-original="../../imgs/views/equipment/tibet-1.jpg" src="../../imgs/views/equipment/tibet-1.jpg" alt="设备1"></li>
+                        <li><img data-original="../../imgs/views/equipment/tibet-2.jpg" src="../../imgs/views/equipment/tibet-2.jpg" alt="设备2"></li>
+                        <li><img data-original="../../imgs/views/equipment/tibet-3.jpg" src="../../imgs/views/equipment/tibet-3.jpg" alt="设备3"></li>
+                        <li><img data-original="../../imgs/views/equipment/tibet-4.jpg" src="../../imgs/views/equipment/tibet-4.jpg" alt="设备4"></li>
+                        <li><img data-original="../../imgs/views/equipment/tibet-5.jpg" src="../../imgs/views/equipment/tibet-5.jpg" alt="设备5"></li>
+                        <li><img data-original="../../imgs/views/equipment/tibet-6.jpg" src="../../imgs/views/equipment/tibet-6.jpg" alt="设备6"></li>
+                        <li><img data-original="../../imgs/views/equipment/tibet-7.jpg" src="../../imgs/views/equipment/tibet-7.jpg" alt="设备7"></li>
+                        <li><img data-original="../../imgs/views/equipment/tibet-8.jpg" src="../../imgs/views/equipment/tibet-8.jpg" alt="设备8"></li>
+                        <li><img data-original="../../imgs/views/equipment/tibet-9.jpg" src="../../imgs/views/equipment/tibet-9.jpg" alt="设备9"></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</div>
+
+<script src="../../js/plugins/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"></script>
+<script src="../../js/plugins/viewer.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', function () {
+        var galley = document.getElementById('galley');
+        var viewer = new Viewer(galley, {
+            url: 'data-original',
+            toolbar: {
+                oneToOne: true,
+                prev: function() {
+                    viewer.prev(true);
+                },
+                play: true,
+                next: function() {
+                    viewer.next(true);
+                },
+                /*download: function() {
+                    const a = document.createElement('a');
+
+                    a.href = viewer.image.src;
+                    a.download = viewer.image.alt;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                },*/
+            },
+        });
+    });
+</script>
+</body>
+</html>
