@@ -1,0 +1,42 @@
+.content-nav ul{
+    text-align: center;
+    line-height: 40px;
+}
+.content-nav ul li{
+    border-bottom: 1px solid #CCCCCC;
+}
+
+/*当前导航*/
+.content-nav .now{
+    border-left:6px solid #6F7476;
+}
+
+/*iframe*/
+.memberBox{
+    margin: 10px 20px;
+    line-height: 20px;
+    border-bottom: 1px dashed #DEDDDD;
+}
+
+.memberBox .title{
+    padding: 20px;
+    font-weight: normal;
+    background-color: #F0EFED;
+    border-bottom: 1px dashed #CCCCCC;
+    text-align: center;
+    color: #204C82;
+    font-size: 20px;
+    font-family:sans-serif;
+}
+
+.memberBox .text{
+    font-size: 13px;
+    color: #7A7A7A;
+    line-height: 25px;
+    font-family: 'Microsoft Yahei', Helvetica, Arial, sans-serif;
+}
+
+.memberBox .text em{
+    font-style: italic;
+    color: #000000;
+}

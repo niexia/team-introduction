@@ -2,12 +2,13 @@
     text-align: center;
     line-height: 40px;
 }
+.content-nav ul li{
+    border-bottom: 1px solid #CCCCCC;
+}
 
 /*当前导航*/
 .content-nav .now{
-    /*border: 1px solid #CCCCCC;*/
-    background-color: #6F7476;
-    border-radius: 5px;
+    border-left:6px solid #6F7476;
 }
 
 /*iframe*/
