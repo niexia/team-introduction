@@ -19,12 +19,12 @@
     <div class=" navigation">
         <div class="row">
             <div class="col nav">
-                <ul>
+                <ul class="docNav">
                     <li><a href="home.html" title="首页">首页</a></li>
                     <li><a href="teammember.html" title="团队成员">团队成员</a></li>
                     <li><a href="research.html" title="科研成果">科研成果</a></li>
                     <li><a href="equipment.html" title="实验设备">实验设备</a></li>
-                    <li><a href="lifephoto.html" title="生活合影">生活合影</a></li>
+                    <li class="on"><a href="lifephoto.html" title="生活合影">生活合影</a></li>
                     <li><a href="overview.html" title="研究概览">研究概览</a></li>
                     <li><a href="recruitment.html" title="招生招聘">招生招聘</a></li>
                 </ul>
@@ -120,6 +120,11 @@
             i=(i>(img_num-1)?(img_num-1):i);
             play();
         });
+
+        $(".docNav > li").click(function(){
+            $(this).addClass("on").siblings().removeClass("on");
+
+        })
     });
     function play(){//动画移动
         var img=new Image(); //图片预加载

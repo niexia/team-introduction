@@ -33,7 +33,7 @@
 .navigation ul li{
     display: inline;
     height: 100%;
-    margin: 0 20px;
+    padding: 10px 20px;
 }
 .navigation ul li:hover{
     cursor: pointer;
@@ -91,3 +91,9 @@ a:link {color: #000000; text-decoration: none} /* 未访问的链接 */
 a:visited {color: #000000}	/* 已访问的链接 */
 a:hover {color: #CCCCCC}	/* 鼠标移动到链接上 */
 a:active {color: #CCCCCC}	/* 选定的链接，即鼠标按下去的时候不松开显示的状态 */
+
+/*当前导航*/
+.nav .on{
+    background-color: #CCCCCC;
+    border-radius: 5px;
+}

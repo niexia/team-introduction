@@ -2,8 +2,12 @@
     text-align: center;
     line-height: 40px;
 }
-.content-text {
-    height: 1000px;
+
+/*当前导航*/
+.content-nav .now{
+    /*border: 1px solid #CCCCCC;*/
+    background-color: #6F7476;
+    border-radius: 5px;
 }
 
 /*iframe*/
