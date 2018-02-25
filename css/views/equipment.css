@@ -5,6 +5,9 @@
 .content-nav ul li{
     border-bottom: 1px solid #CCCCCC;
 }
+.content-nav ul li a:hover{
+    cursor: pointer;
+}
 
 /*当前导航*/
 .content-nav .now{
@@ -15,14 +18,14 @@
 .memberBox{
     margin: 10px 20px;
     line-height: 20px;
-    border-bottom: 1px dashed #DEDDDD;
+    /*border-bottom: 1px dashed #DEDDDD;*/
 }
 
 .memberBox .title{
     padding: 20px;
     font-weight: normal;
     background-color: #F0EFED;
-    border-bottom: 1px dashed #CCCCCC;
+    /*border-bottom: 1px dashed #CCCCCC;*/
     text-align: center;
     color: #204C82;
     font-size: 20px;
@@ -31,19 +34,25 @@
 
 
 /*图片*/
+#galley {
+    text-align: center;
+    margin-top: 10px;
+    padding: 0!important;
+    border: 1px solid #F0EFED;
+}
 .pictures {
-    margin: 0;
-    padding: 0;
+    width: 100%;
     list-style: none;
     max-width: 30rem;
+    overflow: hidden;
+    /*margin-right: 5%;*/
 }
-
 .pictures > li {
     float: left;
-    width: 33.3%;
-    height: 33.3%;
-    margin: 0 -1px -1px 0;
-    border: 1px solid transparent;
+    display: inline-block;
+    width: 30%;
+    height: 30%;
+    margin: 1.6%;
     overflow: hidden;
 }
 
@@ -51,4 +60,17 @@
     width: 100%;
     cursor: -webkit-zoom-in;
     cursor: zoom-in;
+}
+
+/*下载*/
+.viewer-download {
+    color: #fff;
+    font-family: FontAwesome;
+    font-size: .75rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.viewer-download::before {
+    content: "\f019";
 }
