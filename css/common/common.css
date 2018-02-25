@@ -67,6 +67,7 @@
     padding: 10px;
 }
 .content-text{
+    /*min-height: 550px;*/
     width: 75%;
     background-color: #ffffff;
     border: 1px solid #EBEAE8;

@@ -1,0 +1,196 @@
+.main{
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    fiex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #F7F6F5;
+    margin-top: 5px;
+}
+/*标题*/
+.picturesTitle, .navTitle{
+    /*width: 100%;*/
+    height: 20px;
+    overflow: hidden;
+    padding: 5px 17px;
+    color: #ffffff;
+    background: url("../../imgs/views/home/right.png") no-repeat center left #3F5767;
+}
+.picturesTitle span, .navTitle span{
+    float: right;
+    display: inline-block;
+    padding-right: 15px;
+    width: 50px;
+    color: #FF7B07;
+    background: url("../../imgs/views/home/more.png") no-repeat center right #3F5767;
+}
+
+/*图片新闻*/
+.left{
+    /*border: 1px solid #204C82;*/
+    width: 20%;
+    min-height: 500px;
+}
+/*小图*/
+.leftPictures{
+    /*height: 200px;*/
+    margin: 0;
+    overflow: hidden;
+}
+#scrollSmallPic{
+    width: 100%;
+    height: 184px;
+    position: relative;
+}
+#scrollSmallPic img{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    left: 0;
+    top: 0;
+}
+#scrollSmallPic div{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#scrollSmallPic div a{
+    float: left;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    margin-right: 2%;
+    padding: 5px;
+    border: 1px solid #E6E5E2;
+    border-radius: 50%;
+    background: #CCCCCC;
+}
+#scrollSmallPic div a:hover{
+    text-decoration: none;
+    color: #EEEEEE;
+}
+#scrollSmallPic div a em {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-style: normal;
+    font-size: 12px;
+}
+#scrollSmallPic a.chos {/*选中的标记，添加背景图片和背景颜色*/
+    background: url("../../imgs/views/home/adindex.gif") no-repeat center 39px #37A7D7;
+    color: #FFFFFF;
+}
+.leftNav{
+    margin-top: 20px;
+}
+.leftNav .navContent ul li{
+    margin: 10px 0;
+}
+.leftNav .navContent ul li a{
+    display: block;
+    overflow: hidden;
+}
+.leftNav .navContent ul li a b{
+    float: right;
+}
+
+
+.right{
+    width: 60%;
+    margin: 0 10px;
+    min-height: 500px;
+
+}
+/*大图*/
+.rightPictures{
+    overflow: hidden;
+}
+#scrollBigPic{
+    /*padding: 0 10px;*/
+    /*border: 1px solid red;*/
+    float: left;
+    width: 100%;
+    height: 321px;
+    overflow: hidden;
+    position: relative;
+}
+#scrollBigPic img{/*图片的处理就是定位*/
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#scrollBigPic div{
+    overflow: hidden;
+    float: left;
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;/*文字放到下面*/
+}
+#scrollBigPic div a {
+    float: left;
+    background-color: #686868;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-right: 1.25%;
+    overflow: hidden;
+    padding: 5px 1%;
+    text-align: center;
+    width: 17%;
+}
+#scrollBigPic div a.lastA{
+    margin-right: 0;
+}
+#scrollBigPic div a:hover{
+    text-decoration: none;
+    color: #EEEEEE;
+}
+#scrollBigPic div a em {
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    font-style: normal;
+    font-size: 12px;
+}
+#scrollBigPic a.chos {/*选中的标记，添加背景图片和背景颜色*/
+    background: url("../../imgs/views/home/adindex.gif") no-repeat center 39px #37A7D7;
+    color: #FFFFFF;
+}
+
+
+/*新闻动态 通知公告*/
+.rightNav{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.right .rightNav .news{
+    display: inline-block;
+    width: calc(50% - 12px);
+    height: 100%;
+    float: left;
+    border: 1px solid #CACACA;
+    margin-right: 10px;
+    /*border: 1px solid #E4E4E4;*/
+
+}
+.right .rightNav .notice{
+    display: inline-block;
+    width: calc(50% - 2px);
+    border: 1px solid #CACACA;
+    float: left;
+    /*border: 1px solid #E4E4E4;*/
+}
+
+.rightNav .aLink {
+    line-height: 25px;
+    padding: 10px;
+}
+.rightNav .aLink a{
+    padding-left: 30px;
+    background: url("../../imgs/views/home/new.png") center left no-repeat;
+}
