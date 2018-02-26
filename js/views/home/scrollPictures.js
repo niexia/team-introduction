@@ -7,7 +7,6 @@ $(function(){
     var indexS = 0;
     var adTimerS = null;
     $imgrollsS.mouseover(function(){//获取index
-        debugger;
         indexS = $imgrollsS.index(this);
         //index = $(this).index();
         showImgSmall(indexS);
@@ -32,7 +31,6 @@ $(function(){
     var index = 0;
     var adTimer = null;
     $imgrolls.mouseover(function(){//获取index
-        debugger;
         index = $imgrolls.index(this);
         //index = $(this).index();
         showImg(index);

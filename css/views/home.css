@@ -6,7 +6,8 @@
     justify-content: center;
     align-items: flex-start;
     background-color: #F7F6F5;
-    margin-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 /*标题*/
 .picturesTitle, .navTitle{
