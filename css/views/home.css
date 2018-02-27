@@ -195,3 +195,15 @@
     padding-left: 30px;
     background: url("../../imgs/views/home/new.png") center left no-repeat;
 }
+
+/*各个子页面的样式*/
+.contentSon{
+    border: 1px solid #3F5767;
+    border-radius: 5px;
+    margin: 10px 20%;
+}
+.contentSon .title{
+    text-align: center;
+    font-size: 20px;
+    color: #204C82;
+}
