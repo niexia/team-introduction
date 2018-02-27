@@ -71,16 +71,6 @@
 </div>
 
 <script>
-    window.addEventListener('load',function () { //新闻动态和通知公告的高度相同
-        var news = document.getElementsByClassName('news')[0];
-        var notice = document.getElementsByClassName('notice')[0];
-        var newsHeight = news.offsetHeight;
-        var noticeHeight = notice.offsetHeight;
-        var height = newsHeight > noticeHeight? newsHeight : noticeHeight;
-        news.style.height = height + 'px';
-        notice.style.height = height + 'px';
-        console.log(height);
-    })
     $(function () {
         $(".docNav > li").click(function(){
             $(this).addClass("on").siblings().removeClass("on");

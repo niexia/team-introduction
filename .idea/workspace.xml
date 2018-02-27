@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c5274254-c644-4fef-bb1e-8abda5e7779e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/imgs/views/teamMember/1503818559876screensave.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/home/1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/views/home.css" afterPath="$PROJECT_DIR$/css/views/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/teamMember/groupTeacher.html" afterPath="$PROJECT_DIR$/views/teamMember/groupTeacher.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/home/1.html" afterPath="$PROJECT_DIR$/views/home/1.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +19,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/home.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="252">
@@ -59,11 +55,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="1.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="1.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/home/1.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="402">
-                  <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
+                <state relative-caret-position="403">
+                  <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
                   <folding />
                 </state>
               </provider>
@@ -136,8 +132,8 @@
           <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="433">
-                  <caret line="156" column="9" lean-forward="true" selection-start-line="156" selection-start-column="9" selection-end-line="156" selection-end-column="9" />
+                <state relative-caret-position="163">
+                  <caret line="138" column="0" lean-forward="true" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
                   <folding>
                     <element signature="e#4234#4240#0" expanded="true" />
                     <element signature="e#4311#4317#0" expanded="true" />
@@ -249,9 +245,9 @@
         <option value="$PROJECT_DIR$/js/views/home/scrollPictures.js" />
         <option value="$PROJECT_DIR$/css/common/common.css" />
         <option value="$PROJECT_DIR$/views/teamMember/groupTeacher.html" />
-        <option value="$PROJECT_DIR$/views/home/1.html" />
         <option value="$PROJECT_DIR$/css/views/home.css" />
         <option value="$PROJECT_DIR$/home.html" />
+        <option value="$PROJECT_DIR$/views/home/1.html" />
       </list>
     </option>
   </component>
@@ -410,7 +406,7 @@
       <workItem from="1519604363554" duration="2687000" />
       <workItem from="1519623889747" duration="84000" />
       <workItem from="1519624026784" duration="34000" />
-      <workItem from="1519736084856" duration="3416000" />
+      <workItem from="1519736084856" duration="3920000" />
     </task>
     <task id="LOCAL-00001" summary="build project">
       <created>1519285374384</created>
@@ -510,11 +506,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519737266545</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="develop">
+      <created>1519739521353</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1519739521353</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80781000" />
+    <option name="totallyTimeSpent" value="81285000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -556,9 +559,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="build project" />
-    <MESSAGE value="develop" />
     <MESSAGE value="fix bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix bug" />
+    <MESSAGE value="develop" />
+    <option name="LAST_COMMIT_MESSAGE" value="develop" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -860,14 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/home/1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="52" column="43" lean-forward="false" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -899,6 +894,14 @@
             <element signature="e#6416#6422#0" expanded="true" />
             <element signature="e#6500#6506#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home/1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
