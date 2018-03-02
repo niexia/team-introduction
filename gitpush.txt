@@ -1,0 +1,6 @@
+git提交的时候
+git push origin dev，就可以push到对应的远端了的分支dev了。 
+git push origin dev操作的前提是你切换到了当前远程dev分支。
+
+比如这时候你在master分支，提交是不成功的，需要先切换分支到dev
+git checkout dev
