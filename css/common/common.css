@@ -17,15 +17,11 @@
 .navigation{
     height: 40px;
     line-height: 40px;
-    background: -webkit-linear-gradient(#505050, #272727); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(#505050, #272727); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(#505050, #272727); /* Firefox 3.6 - 15 */
-    background: linear-gradient(#505050, #272727); /* 标准的语法 */
-    color: #ffffff;
+    color: #636363;
     font-size: 1em;
     font-family: proxima-nova,'Helvetica Neue',Helvetica,Arial,sans-serif;
     padding: 0 20% 0 15%;
-    border-bottom: 2px solid #6F7476;
+    /* border-bottom: 2px solid #6F7476; */
 }
 .navigation ul{
     display: block;
@@ -39,10 +35,10 @@
     cursor: pointer;
     color: #CCCCCC;
 }
-.navigation ul li a:link {color: #ffffff; text-decoration: none} /* 未访问的链接 */
-.navigation ul li a:visited {color: #ffffff}	/* 已访问的链接 */
-.navigation ul li a:hover {color: #CCCCCC}	/* 鼠标移动到链接上 */
-.navigation ul li a:active {color: #CCCCCC}	/* 选定的链接，即鼠标按下去的时候不松开显示的状态 */
+.navigation ul li a:link {color: #636363; text-decoration: none} /* 未访问的链接 */
+.navigation ul li a:visited {color: #636363}	/* 已访问的链接 */
+.navigation ul li a:hover {color: #636363}	/* 鼠标移动到链接上 */
+.navigation ul li a:active {color: #636363}	/* 选定的链接，即鼠标按下去的时候不松开显示的状态 */
 
 /*内容*/
 .main{
