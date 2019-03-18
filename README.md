@@ -1,3 +1,3 @@
-#### 实验室-introduction
+#### team-introduction
 
 基于 jquery 的简单页面
